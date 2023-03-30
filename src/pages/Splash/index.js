@@ -4,7 +4,7 @@ import React from 'react'
 const Splash = () => {
   return (
     <View>
-      <Text>Splash</Text>
+      <Text>Splash Keempat</Text>
     </View>
   )
 }

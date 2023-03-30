@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <View>
-      <Text>Beranda</Text>
+      <Text>Beranda Kedua</Text>
     </View>
   )
 }
