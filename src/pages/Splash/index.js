@@ -10,7 +10,7 @@ const Splash = ({ navigation }) => {
   }, [navigation])
   return (
     <ImageBackground source={SplashBackground} style={styles.background}>
-      <Image source={Logos} style={styles.logo} />
+      <Image source={Logos} style={styles.logoz}/>
     </ImageBackground>
   )
 }
@@ -22,10 +22,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignContent: 'center',
     justifyContent: 'center',
+    width: 400,
+    height: 640
   },
-  logo: {
-    width: '222',
-    height: '105'
+  logoz: {
+    width: 270,
+    height: 105
   }
 
 
