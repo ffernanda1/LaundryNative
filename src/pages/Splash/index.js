@@ -22,12 +22,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignContent: 'center',
     justifyContent: 'center',
-    width: 400,
+    width: 410,
     height: 640
   },
   logoz: {
-    width: 270,
-    height: 105
+    width: 320,
+    height: 150
   }
 
 
