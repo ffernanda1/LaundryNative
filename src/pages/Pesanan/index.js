@@ -4,7 +4,7 @@ import React from 'react'
 const Pesanan = () => {
   return (
     <View>
-      <Text>Pesanan Ketiga</Text>
+      <Text>Pesanan</Text>
     </View>
   )
 }
