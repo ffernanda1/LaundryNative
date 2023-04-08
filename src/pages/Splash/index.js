@@ -1,16 +1,19 @@
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { Image, ImageBackground, StyleSheet, Text, View, Dimensions } from 'react-native'
 import React, { useEffect } from 'react'
 import { SplashBackground, Logos } from '../../assets'
+import { WindowWidth, WindowHeight } from '../../assets/utils/constant'
+
 
 const Splash = ({ navigation }) => {
-  useEffect(()=> {
-    setTimeout(()=> {
+  useEffect(() => {
+    setTimeout(() => {
       navigation.replace('MainApp')
     }, 3000)
   }, [navigation])
   return (
     <ImageBackground source={SplashBackground} style={styles.background}>
-      <Image source={Logos} style={styles.logoz}/>
+      <Image source={Logos} style={styles.logoz} />
+
     </ImageBackground>
   )
 }
@@ -22,12 +25,15 @@ const styles = StyleSheet.create({
     flex: 1,
     alignContent: 'center',
     justifyContent: 'center',
-    width: 410,
-    height: 640
+    width: WindowWidth,
+    height: WindowHeight,
+    paddingHorizontal: 30,
+    paddingTop: 10,
   },
   logoz: {
-    width: 320,
-    height: 150
+    width: WindowWidth * 0.77,
+    height: WindowHeight * 0.2,
+
   }
 
 
