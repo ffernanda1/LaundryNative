@@ -14,6 +14,7 @@ const Home = () => {
           <Text style={styles.usernames}>Fernanda</Text>
         </View>
       </ImageBackground>
+      <Saldo/>
     </View>
   )
 }
