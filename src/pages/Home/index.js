@@ -2,6 +2,7 @@ import { Dimensions, ImageBackground, StyleSheet, Text, View, Image } from 'reac
 import React from 'react'
 import { HeaderHome, Logos } from '../../assets'
 import { WindowWidth, WindowHeight } from '../../assets/utils/constant'
+import { Saldo } from '../../component'
 
 
 const Home = () => {
