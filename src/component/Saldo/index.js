@@ -1,11 +1,29 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { WindowWidth, WindowHeight } from '../../assets/utils/constant'
+import { WARNA_UTAMA } from '../../assets/utils/constant'
+import ButtonIcon from '../ButtonIcon'
+import Gap from '../Gap'
+
 
 const Saldo = () => {
   return (
     <View style={styles.container}>
-      <Text> Saldo</Text>
+      <View style={styles.informasiSaldo}>
+        <View style={styles.texts}>
+          <Text style={styles.labelSaldo}> Saldo</Text>
+          <Text style={styles.valueSaldo}> Rp 100.000</Text>
+        </View>
+        <View style={styles.texts}>
+          <Text style={styles.labelPoint}> Antar Point</Text>
+          <Text style={styles.valuePoint}> 100 Points</Text>
+        </View>
+      </View>
+      <View style={styles.buttonAction}>
+        <ButtonIcon title="Add Saldo"/>
+        <Gap width={10} />
+        <ButtonIcon title="Get Point"/>
+      </View>
     </View>
   )
 }
@@ -26,7 +44,36 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.34,
     shadowRadius: 6.27,
     elevation: 10,
-    marginTop: -WindowHeight*0.05,
-  }
-
+    marginTop: -WindowHeight * 0.05,
+    flexDirection: 'row',
+  },
+  texts: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  informasiSaldo: {
+    width: '60%'
+  },
+  labelSaldo: {
+    fontSize: 20,
+    fontFamily: 'TitilliumWeb-Regular'
+  },
+  labelPoint: {
+    fontSize: 12,
+    fontFamily: 'TitilliumWeb-Regular'
+  },
+  valueSaldo: {
+    fontSize: 20,
+    fontFamily: 'TitilliumWeb-Bold'
+  },
+  valuePoint: {
+    fontSize: 12,
+    fontFamily: 'TitilliumWeb-Bold',
+    color: WARNA_UTAMA
+  },
+  buttonAction: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
 })
