@@ -12,7 +12,7 @@ const Home = () => {
         <Image source={Logos} style={styles.logo} />
         <View style={styles.hello}>
           <Text style={styles.selamat}> Selamat Datang,</Text>
-          <Text style={styles.usernames}>Fernanda</Text>
+          <Text style={styles.usernames}>Fernanda G.M.</Text>
         </View>
       </ImageBackground>
       <Saldo/>
