@@ -16,6 +16,9 @@ const Home = () => {
         </View>
       </ImageBackground>
       <Saldo/>
+      <View style={styles.layanan}>
+        <Text style={styles.label}>Layanan Kami</Text>
+      </View>
     </View>
   )
 }
