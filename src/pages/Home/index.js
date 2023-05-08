@@ -18,6 +18,8 @@ const Home = () => {
       <Saldo/>
       <View style={styles.layanan}>
         <Text style={styles.label}>Layanan Kami</Text>
+        <Text style={styles.label}>Layanan Kami</Text>
+        <Text style={styles.label}>Layanan Kami</Text>
       </View>
     </View>
   )
