@@ -2,7 +2,7 @@ import { Dimensions, ImageBackground, StyleSheet, Text, View, Image } from 'reac
 import React from 'react'
 import { HeaderHome, Logos } from '../../assets'
 import { WindowWidth, WindowHeight } from '../../assets/utils/constant'
-import { Saldo } from '../../component'
+import { ButtonIcon, Saldo } from '../../component'
 
 
 const Home = () => {
@@ -18,8 +18,14 @@ const Home = () => {
       <Saldo/>
       <View style={styles.layanan}>
         <Text style={styles.label}>Layanan Kami</Text>
-        <Text style={styles.label}>Layanan Kami</Text>
-        <Text style={styles.label}>Layanan Kami</Text>
+        <View style={styles.iconLayanan}>
+        <ButtonIcon title="Kiloan" type="layanan"/>
+        <ButtonIcon title="Satuan" type="layanan"/>
+        <ButtonIcon title="VIP" type="layanan"/>
+        <ButtonIcon title="Karpet" type="layanan"/> 
+        <ButtonIcon title="Setrika Saja" type="layanan"/>
+        <ButtonIcon title="Express" type="layanan"/>
+        </View>
       </View>
     </View>
   )
@@ -53,6 +59,22 @@ const styles = StyleSheet.create({
   usernames: {
     fontSize: 22,
     fontFamily: 'TitilliumWeb-Bold',
-
+  },
+  layanan: {
+    paddingLeft: 25,
+    paddingRight: 30,
+    paddingTop: 25
+  },
+  label: {
+    paddingLeft: 25,
+    fontSize: 18,
+    fontFamily: 'TitilliumWeb-Bold',
+  },
+  iconLayanan: {
+    marginTop: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginRight: 20, 
+    flexWrap: 'wrap'
   }
 })

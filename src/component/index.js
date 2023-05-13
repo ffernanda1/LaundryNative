@@ -1,4 +1,5 @@
 import BottomNavigation from "./BottomNavigation";
-import Saldo from "./Saldo"
+import Saldo from "./Saldo";
+import ButtonIcon from "./ButtonIcon";
 
-export { BottomNavigation, Saldo }
+export { BottomNavigation, Saldo, ButtonIcon };
