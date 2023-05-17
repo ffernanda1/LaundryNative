@@ -6,6 +6,7 @@ import { ButtonIcon, Saldo } from '../../component'
 
 
 const Home = () => {
+  
   return (
     <View style={styles.page}>
       <ImageBackground source={HeaderHome} style={styles.header}>
