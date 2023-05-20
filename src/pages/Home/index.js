@@ -28,6 +28,9 @@ const Home = () => {
         <ButtonIcon title="Express" type="layanan"/>
         </View>
       </View>
+      <View>
+      <Text style={styles.pesananAktif}>Pesanan Aktif</Text>
+      </View>
     </View>
   )
 }
@@ -77,5 +80,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginRight: 20, 
     flexWrap: 'wrap'
+  },
+  pesananAktif: {
+    paddingHorizontal: 30,
   }
 })
