@@ -12,6 +12,7 @@ import Laundry from "./011-laundry_1.svg";
 import Iron from "./021-iron_1.svg";
 import Truck from "./036-delivery_truck_1.svg";
 import Scale from "./041-scale_1.svg";
+import Pesanan from "./001-washing_machine_1.svg";
 
 
 export { 
@@ -29,4 +30,5 @@ export {
     Iron,
     Truck,
     Scale,
+    Pesanan
 };
