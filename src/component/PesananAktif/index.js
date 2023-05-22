@@ -9,7 +9,7 @@ const index = () => {
       <Pesanan />
       <View>
         <Text style={styles.title}>Pesanan No. 001</Text>
-        <Text>Sudah Selesai</Text>
+        <Text style={styles.hasil}>Sudah Selesai</Text>
       </View>
     </TouchableOpacity>
   )
@@ -33,5 +33,8 @@ const styles = StyleSheet.create({
     shadowRadius: 6.27,
     elevation: 10,
     marginVertical: WindowHeight*0.01,
+  },
+  title: {
+    fontFamily: 'TitilliumReguler'
   }
 })
