@@ -31,10 +31,10 @@ const Home = () => {
         </View>
         <View style={styles.pesananAktif}>
           <Text style={styles.label}>Pesanan Aktif</Text>
-          <PesananAktif/>
-          <PesananAktif/>
-          <PesananAktif/>
-          <PesananAktif/>
+          <PesananAktif title="Pesanan No. 001" status="Sudah Selesai"/>
+          <PesananAktif title="Pesanan No. 002" status="Masih Dicuci"/>
+          <PesananAktif title="Pesanan No. 003" status="Masih Dicuci"/>
+          <PesananAktif title="Pesanan No. 004" status="Sudah Selesai"/>
         </View>
       </ScrollView>
     </View>

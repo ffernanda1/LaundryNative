@@ -1,15 +1,15 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Pesanan } from '../../assets'
-import { WindowHeight } from '../../assets/utils/constant'
+import { WARNA_ABU_ABU, WARNA_UTAMA, WARNA_WARNING, WindowHeight, WindowWidth } from '../../assets/utils/constant'
 
-const index = () => {
+const index = ({title, status}) => {
   return (
     <TouchableOpacity style={styles.container}>
       <Pesanan />
-      <View>
-        <Text style={styles.title}>Pesanan No. 001</Text>
-        <Text style={styles.hasil}>Sudah Selesai</Text>
+      <View style={styles.text}>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.status(status)}>{status}</Text>
       </View>
     </TouchableOpacity>
   )
@@ -33,8 +33,18 @@ const styles = StyleSheet.create({
     shadowRadius: 6.27,
     elevation: 10,
     marginVertical: WindowHeight*0.01,
+    alignItems: 'center',
+  },
+  text:{
+    marginLeft: WindowWidth*0.02,
   },
   title: {
-    fontFamily: 'TitilliumReguler'
-  }
+    fontSize: 18,
+    fontFamily: 'TitilliumWeb-SemiBold'
+  },
+  status: (status) => ({
+    fontSize: 14,
+    fontFamily: 'TitilliumWeb-Light',
+    color: status === 'Sudah Selesai' ? WARNA_UTAMA : status === 'Masih Dicuci' ? WARNA_WARNING : WARNA_ABU_ABU,
+  })
 })
